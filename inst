@@ -182,7 +182,7 @@ nextcloud_configure_ldap_backend() {
     data+="&configData[ldapConfigurationActive]=1"
     data+="&configData[ldapAttributesForUserSearch]="`nextcloud_urlEncode "$nextcloud_ldap_userSearchAttributes"`
     data+="&configData[ldapExpertUsernameAttr]=uid"
-    data+="&configData[ldapExpertUUIDUserAttr]="
+    data+="&configData[ldapExpertUUIDUserAttr]=entryUUID"
     data+="&configData[useMemberOfToDetectMembership]=$NC_MEMBER_OF"
     data+="&configData[ldapNestedGroups]=0"
     data+="&configData[turnOnPasswordChange]=0"
